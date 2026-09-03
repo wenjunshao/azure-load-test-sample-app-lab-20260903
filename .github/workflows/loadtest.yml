@@ -34,7 +34,7 @@ jobs:
       # Run the load test
       - name: Azure Load Testing
         # Pinning the action to a specific commit SHA to avoid breaking changes in the future.
-        uses: azure/load-testing@5c5d948af73990aa1c0732e255897d1b1b4c0e7b # v1.2.5
+        uses: azure/load-testing@09c53cb9c4bea539ae8634dc76673a36474e250c # Node.js 24-compatible revision
         with:
           loadTestConfigFile: 'config.yaml'
           loadTestResource: ${{ env.LOAD_TEST_RESOURCE}}
